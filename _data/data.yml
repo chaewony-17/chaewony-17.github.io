@@ -62,37 +62,31 @@ sidebar:
 
 
 career-profile:
-  title: Career Profile
+  title: Hello, I'm Chaewon :)
   summary: |
-    Summarise your career here lorem ipsum dolor sit amet, consectetuer
-    adipiscing elit. You can [download this free resume/CV template here]().
-    Aenean commodo ligula eget dolor aenean massa. Cum sociis natoque
-    penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-    Donec quam felis, ultricies nec, pellentesque eu.
-    Second paragraph if required.
+    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum (Ryan) Ahn. 
+    As a member of the SNUCEM Lab, my research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
+    My current work investigates how Deep Reinforcement Learning (DRL) and perception-aware navigation can enable mobile robots to monitor workers effectively on construction sites, even under challenging conditions such as occlusion. 
+    I am particularly interested in enhancing robots’ decision-making capabilities in complex contexts and environments by incorporating Vision-Language Model (VLM) inference, thereby contributing to more sophisticated and intelligent monitoring operations.
 education:
   title: Education
   info:
-  - degree: MSc in Computer Science
-    university: University of London
-    time: 2011 - 2012
+  - degree: MS Cousre in Architectural Engineering
+    university: Seoul National University
+    time: 2024 - Present
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
+      I am pursuing my M.S. in Architectural Engineering at Seoul National University (GPA 4.18/4.5) specifically in Construction Engineering & Management Lab. 
+      My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments. 
+      In particular, I investigate Deep Reinforcement Learning (DRL) and perception-aware navigation, incorporating Vision-Language Model (VLM) inference to advance intelligent monitoring in real-world construction sites.
         - Bullet point
         - Bullet point
-  - degree: BSc in Applied Mathematics
-    university: Bristol University
-    time: 2007 - 2011
+  - degree: BSc in Architectural Engineering
+    university: Chung-ang University
+    time: 2019 - 2023
     details: |
-      Describe your study here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum
-      sociis natoque penatibus et magnis dis parturient montes, nascetur
-      ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu,
-      pretium quis, sem.
+      I earned my B.S. in Architecture and Building Science from Chung-Ang University, graduating at the top of my class (GPA 4.33/4.5). 
+      During my undergraduate studies, I conducted research on vision-based safety management, wearable sensor–based worker stress monitoring, and autonomous construction systems at the Construction Technology Innovation Laboratory(ConTILab). 
+      I also gained hands-on experience in applying machine learning to vision data and extending it to robotic visual mapping, which further developed into expertise with Robot Operating System (ROS), SLAM, and autonomous navigation technologies.
         - Bullet point
         - Bullet point
 

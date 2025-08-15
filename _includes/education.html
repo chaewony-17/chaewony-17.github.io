@@ -1,22 +1,29 @@
 {% assign education = site.data.data.education %}
+{% assign show_sidebar = site.data.data.sidebar.education %}
+{% assign show_main = site.data.data.education.show_in_main %}
+
 {% if education %}
 
-  {%- comment -%} === 사이드바: 요약 === {%- endcomment -%}
-  {% if site.data.data.sidebar.education %}
+  {%- comment -%} === 사이드바: 요약 전용 === {%- endcomment -%}
+  {% if show_sidebar %}
   <div class="education-container container-block">
     <h2 class="container-block-title">{{ education.title }}</h2>
+    {%- comment -%}
+      필요하면 최신 항목 몇 개만 보이도록 limit 사용:
+      {% for graduation in education.info limit:2 %}
+    {%- endcomment -%}
     {% for graduation in education.info %}
-    <div class="item">
-      <h4 class="degree">{{ graduation.degree }}</h4>
-      <h5 class="meta">{{ graduation.university }}</h5>
-      <div class="time">{{ graduation.time }}</div>
-    </div>
+      <div class="item">
+        <h4 class="degree">{{ graduation.degree }}</h4>
+        <h5 class="meta">{{ graduation.university }}</h5>
+        <div class="time">{{ graduation.time }}</div>
+      </div>
     {% endfor %}
   </div>
   {% endif %}
 
-  {%- comment -%} === 본문: 상세 === {%- endcomment -%}
-  {% if education.show_in_main %}
+  {%- comment -%} === 본문: 상세 전용 === {%- endcomment -%}
+  {% if show_main %}
   <section class="section educations-section">
     <h2 class="section-title">
       <span class="fa-stack fa-xs">
@@ -36,7 +43,9 @@
         <div class="university">{{ graduation.university }}</div>
       </div>
       {% if graduation.details %}
-      <div class="details">{{ graduation.details | markdownify }}</div>
+      <div class="details">
+        {{ graduation.details | markdownify }}
+      </div>
       {% endif %}
     </div>
     {% endfor %}

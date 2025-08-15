@@ -1,7 +1,7 @@
 {% assign education = site.data.data.education %}
 {% if education %}
 
-  {# --- Sidebar 출력 --- #}
+  {%- comment -%} === 사이드바: 요약 스타일 === {%- endcomment -%}
   {% if site.data.data.sidebar.education %}
   <div class="education-container container-block">
     <h2 class="container-block-title">{{ education.title }}</h2>
@@ -15,7 +15,8 @@
   </div>
   {% endif %}
 
-  {# --- 본문 출력 --- #}
+  {%- comment -%} === 본문: 상세 스타일 === {%- endcomment -%}
+  {% if education.show_in_main %}
   <section class="section educations-section">
     <h2 class="section-title">
       <span class="fa-stack fa-xs">
@@ -24,6 +25,7 @@
       </span>
       {{ education.title }}
     </h2>
+
     {% for graduation in education.info %}
     <div class="item">
       <div class="meta">
@@ -34,10 +36,13 @@
         <div class="university">{{ graduation.university }}</div>
       </div>
       {% if graduation.details %}
-      <div class="details">{{ graduation.details | markdownify }}</div>
+      <div class="details">
+        {{ graduation.details | markdownify }}
+      </div>
       {% endif %}
     </div>
     {% endfor %}
   </section>
+  {% endif %}
 
 {% endif %}

@@ -1,0 +1,23 @@
+<!-- _includes/cv.html -->
+<section class="section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-id-card fa-stack-1x fa-inverse"></i>
+    </span>
+    Curriculum Vitae
+  </h2>
+
+  <!-- 프로필 요약 -->
+  {% include career-profile.html %}
+
+  <!-- 학력 상세 (본문용) -->
+  {% include education.html place='main' %}
+
+  <!-- 경력/자격/프로젝트 등 필요 섹션 추가 -->
+  {% include experiences.html %}
+  {% include certifications.html %}
+  {% include projects.html %}
+  {% include publications.html %}
+  {% include skills.html %}
+</section>

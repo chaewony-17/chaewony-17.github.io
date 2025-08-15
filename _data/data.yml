@@ -64,10 +64,12 @@ sidebar:
 career-profile:
   title: Hello, I'm Chaewon :)
   summary: |
-    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum (Ryan) Ahn. 
+    I am a 2nd year of Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum (Ryan) Ahn. 
     As a member of the SNUCEM Lab, my research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
     My current work investigates how Deep Reinforcement Learning (DRL) and perception-aware navigation can enable mobile robots to monitor workers effectively on construction sites, even under challenging conditions such as occlusion. 
-    I am particularly interested in enhancing robots’ decision-making capabilities in complex contexts and environments by incorporating Vision-Language Model (VLM) inference, thereby contributing to more sophisticated and intelligent monitoring operations.
+    As a further step, I am particularly interested in enhancing robots’ decision-making capabilities in complex contexts and environments by incorporating Vision-Language Model (VLM) inference, thereby contributing to more sophisticated and intelligent monitoring operations.
+
+
 education:
   title: Education
   info:

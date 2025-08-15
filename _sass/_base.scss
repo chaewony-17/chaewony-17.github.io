@@ -363,3 +363,38 @@ p {
     margin-right: 5px;
   }
 }
+/* ======= Top right links ======= */
+.toplinks {
+  position: fixed;
+  top: 20px;
+  right: 200px; /* PDF 버튼(right:20px), Print 버튼(right:120px)과 안 겹치게 */
+  z-index: 1000;
+  display: flex;
+  gap: 14px;
+  font-size: 14px;
+
+  a {
+    text-decoration: none;
+    /* 사이드/본문 색상체계와 어울리게 */
+    color: darken($theme-color, 15%);
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: darken($theme-color, 30%);
+  }
+}
+
+/* 모바일에서 줄바꿈 */
+@media (max-width: 576px) {
+  .toplinks {
+    right: 20px;   /* 버튼들과 겹치면 아래로 내리거나 */
+    top: 60px;     /* 살짝 아래로 */
+    flex-wrap: wrap;
+    gap: 10px 12px;
+    background: rgba(255,255,255,0.9);
+    padding: 6px 8px;
+    border-radius: 6px;
+  }
+}
+

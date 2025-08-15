@@ -3,13 +3,13 @@
 #
 
 sidebar:
-  position: right # position of the sidebar : left or right
+  position: left #right # position of the sidebar : left or right
   about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
   education: True # set to False if you want education in main section instead of in sidebar
 
   # Profile information
   name: Chaewon Yang
-  tagline: M.S. Student @Seoul National University(Advised by Prof. Changbum R. Ahn)
+  tagline: M.S. Student @Seoul National University
   avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
 
   # Sidebar links
@@ -19,37 +19,37 @@ sidebar:
   citizenship:
   website: https://chaewony-17.github.io/ # Include the full website URL, including "http://" or "https://".
   linkedin: Chaewon Yang
-  xing: chaewony
+  #xing: chaewony
   github: chaewony-17
-  telegram: # add your nickname without '@' sign
+  #telegram: # add your nickname without '@' sign
   gitlab:
   bitbucket:
-  bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  twitter: '@jekyllrb'
-  stack-overflow: # Number/Username, e.g. 123456/alandoe
-  codewars:
-  goodreads: # Number-Username, e.g. 123456-alandoe
-  mastodon: # Please include your full Mastodon link here.
-  hackerrank: # Please provide your HackerRank username.
-  leetcode: # Please provide your LeetCode username.
-  pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
+  #bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
+  #twitter: '@jekyllrb'
+  #stack-overflow: # Number/Username, e.g. 123456/alandoe
+  # codewars:
+  # goodreads: # Number-Username, e.g. 123456-alandoe
+  # mastodon: # Please include your full Mastodon link here.
+  # hackerrank: # Please provide your HackerRank username.
+  # leetcode: # Please provide your LeetCode username.
+  # pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
     title: Languages
     info:
-    - idiom: English
+    - idiom: Korean
       level: Native
 
-    - idiom: French
+    - idiom: English
       level: Professional
 
-    - idiom: Spanish
-      level: Professional
+    # - idiom: Spanish
+    #   level: Professional
 
   interests:
     title: Interests
     info:
-    - item: Climbing
+    - item: Traveling
       link:
 
 
@@ -71,7 +71,7 @@ career-profile:
 education:
   title: Education
   info:
-  - degree: MS Cousre in Architectural Engineering
+  - degree: MSc in Architectural Engineering
     university: Seoul National University
     time: 2024 - Present
     details: |

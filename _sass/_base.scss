@@ -364,37 +364,95 @@ p {
   }
 }
 /* ======= Top right links ======= */
+/* ======= Top bar settings ======= */
+$topbar-h: 56px;
+
+/* 상단바: HTML 수정 없이 .toplinks의 ::before로 전체 폭 흰 배경 생성 */
 .toplinks {
   position: fixed;
-  top: 20px;
-  right: 350px; /* PDF 버튼(right:20px), Print 버튼(right:120px)과 안 겹치게 */
+  top: 0;
+  right: 20px; /* 기본 위치: 오른쪽 정렬 */
   z-index: 1000;
   display: flex;
-  gap: 14px;
+  align-items: center;
+  gap: 16px;
   font-size: 14px;
+  height: $topbar-h;      /* 바 높이에 맞춰 수직 가운데 정렬 */
+  padding-right: 380px;   /* 오른쪽 끝에 자리 잡은 PDF/Print 버튼 공간 확보(20 + 120 + 여유) */
+
+  /* 전체 폭 흰 배경 바 */
+  &::before {
+    content: "";
+    position: fixed;   /* 뷰포트 기준으로 깔림 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $topbar-h;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    z-index: -1;       /* 링크보다 뒤에 */
+  }
 
   a {
     text-decoration: none;
-    /* 사이드/본문 색상체계와 어울리게 */
     color: darken($theme-color, 15%);
-  }
-
-  a:hover {
-    text-decoration: underline;
-    color: darken($theme-color, 30%);
-  }
-}
-
-/* 모바일에서 줄바꿈 */
-@media (max-width: 576px) {
-  .toplinks {
-    right: 20px;   /* 버튼들과 겹치면 아래로 내리거나 */
-    top: 60px;     /* 살짝 아래로 */
-    flex-wrap: wrap;
-    gap: 10px 12px;
-    background: rgba(255,255,255,0.9);
-    padding: 6px 8px;
+    padding: 8px 10px;
     border-radius: 6px;
+
+    &:hover {
+      text-decoration: none;
+      background: rgba(0,0,0,0.04);
+      color: darken($theme-color, 30%);
+    }
+    &:focus { text-decoration: none; }
   }
 }
 
+/* 본문이 상단바와 겹치지 않도록 여백 보정 */
+body {
+  padding-top: calc(#{$topbar-h} + 40px); /* 기존 60px였다면 상단바 높이만큼 추가 마진 확보 */
+}
+
+/* PDF/Print 버튼을 상단바 안쪽 세로 가운데로 정렬 */
+.print-button,
+.pdf-button {
+  top: calc(#{$topbar-h}/2 - 18px); /* 버튼 높이(약 36px) 기준 가운데 정렬 */
+}
+
+/* 버튼들의 가로 위치는 기존 값 유지 */
+.print-button { right: 120px; }
+.pdf-button   { right: 20px;  }
+
+/* 기존 .toplinks 정의가 있다면 아래 항목들은 제거/대체
+   - position: fixed, top, right, z-index, display, gap, font-size 정도만 남기고
+   - 기존의 right: 350px 같은 고정 오프셋은 사용하지 않음
+*/
+
+/* 모바일 대응 */
+@media (max-width: 768px) {
+  $topbar-h: 64px; /* 모바일은 조금 더 높게 */
+  .toplinks {
+    right: 16px;
+    gap: 12px;
+    font-size: 13px;
+    height: $topbar-h;
+    padding-right: 160px; /* 모바일에서 버튼 여유 공간 축소 */
+
+    &::before {
+      height: $topbar-h;
+    }
+  }
+  .print-button { right: 100px; }
+  .pdf-button   { right: 16px;  }
+  body { padding-top: calc(#{$topbar-h} + 36px); }
+}
+
+/* 인쇄 시 상단바/버튼 제거(d-print-none가 nav에 있더라도 안전망) */
+@media print {
+  .toplinks,
+  .toplinks::before,
+  .print-button,
+  .pdf-button {
+    display: none !important;
+  }
+}

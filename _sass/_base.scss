@@ -367,7 +367,7 @@ p {
 .toplinks {
   position: fixed;
   top: 20px;
-  right: 200px; /* PDF 버튼(right:20px), Print 버튼(right:120px)과 안 겹치게 */
+  right: 350px; /* PDF 버튼(right:20px), Print 버튼(right:120px)과 안 겹치게 */
   z-index: 1000;
   display: flex;
   gap: 14px;

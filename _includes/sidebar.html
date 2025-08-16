@@ -2,7 +2,6 @@
 <div class="sidebar-wrapper">
 
   <div class="profile-container">
-
     {% if sidebar.avatar %}
     <img class="avatar" src="{{ site.baseurl }}/assets/images/{{ sidebar.avatar }}" alt="profile picture" />
     {% endif %}
@@ -14,7 +13,6 @@
     {% if sidebar.tagline %}
     <h3 class="tagline">{{ sidebar.tagline }}</h3>
     {% endif %}
-
   </div><!--//profile-container-->
 
   {% include contact.html %}
@@ -30,5 +28,14 @@
     {% include about.html %}
   {% endif %}
 
-</div><!--//sidebar-wrapper-->
+  <!-- ✅ 여기(닫기 전에) 넣어야 사이드바에 표시됨 -->
+  <div class="container-block">
+    <h2 class="container-block-title">Navigation</h2>
+    <ul class="list-unstyled contact-list">
+      <li><i class="fas fa-book"></i> <a href="{{ '/publications/' | relative_url }}">Publications</a></li>
+      <li><i class="fas fa-briefcase"></i> <a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+      <li><i class="fas fa-user"></i> <a href="{{ '/about/' | relative_url }}">About</a></li>
+    </ul>
+  </div>
 
+</div><!--//sidebar-wrapper-->

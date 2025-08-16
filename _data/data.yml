@@ -4,7 +4,7 @@ sidebar:
   education: True
 
   # Profile information
-  name: Chaewon Yang6
+  name: Chaewon Yang7
   tagline: M.S. Student <br>@Seoul National University
   avatar: profile.png
 
@@ -87,19 +87,26 @@ experiences:
 
 publications:
   title: Publications
+  intro: >
+    Selected publications in construction robotics and safety monitoring.
   papers:
-  - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
-    year: 2025
-    authors: Yang C., Park J., Park M., Ahn C. R.
-    conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
-  - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
-    year: 2025
-    authors: Yang C., Park J., Park M., Ahn C. R.
-    conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
-  - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
-    year: 2024
-    authors: Ji, J., Won, J., Shin, S., Yoo, B., Yang, C., Lee, C., Park, M., Ahn, C. R.
-    conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
+    - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
+      authors: Yang C., Park J., Park M., Ahn C. R.
+      conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
+      year: 2025
+      link: "#"
+
+    - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
+      authors: Yang C., Park J., Park M., Ahn C. R.
+      conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
+      year: 2025
+      link: "#"
+
+    - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
+      authors: Ji J., Won J., Shin S., Yoo B., Yang C., Lee C., Park M., Ahn C. R.
+      conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
+      year: 2024
+      link: "#"
 
 awards:
   title: Awards & Honors

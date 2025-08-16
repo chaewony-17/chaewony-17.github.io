@@ -41,7 +41,7 @@ sidebar:
       level: Native
 
     - idiom: English
-      level: Professional
+      level: Advanced 
 
     # - idiom: Spanish
     #   level: Professional
@@ -78,7 +78,7 @@ education:
     university: Seoul National University
     time: 2024 - Present
     details: |
-      I am pursuing my M.S. in Architectural Engineering at Seoul National University (GPA 4.18/4.5) specifically in Construction Engineering & Management Lab. 
+      I am pursuing my M.S. in Architectural Engineering at Seoul National University (GPA 4.18/4.30) specifically in Construction Engineering & Management Lab. 
       My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments. 
       In particular, I investigate Deep Reinforcement Learning (DRL) and perception-aware navigation, incorporating Vision-Language Model (VLM) inference to advance intelligent monitoring in real-world construction sites.
         - Bullet point
@@ -87,7 +87,7 @@ education:
     university: Chung-ang University
     time: 2019 - 2023
     details: |
-      I earned my B.S. in Architecture and Building Science from Chung-Ang University, graduating at the top of my class (GPA 4.33/4.5). 
+      I earned my B.S. in Architecture and Building Science from Chung-Ang University, graduating at the top of my class (GPA 4.33/4.50). 
       During my undergraduate studies, I conducted research on vision-based safety management, wearable sensor–based worker stress monitoring, and autonomous construction systems at the Construction Technology Innovation Laboratory(ConTILab). 
       I also gained hands-on experience in applying machine learning to vision data and extending it to robotic visual mapping, which further developed into expertise with Robot Operating System (ROS), SLAM, and autonomous navigation technologies.
         - Bullet point

@@ -4,7 +4,7 @@ sidebar:
   education: True
 
   # Profile information
-  name: Chaewon Yang33
+  name: Chaewon Yang4
   tagline: M.S. Student <br>@Seoul National University
   avatar: profile.png
 
@@ -119,6 +119,40 @@ awards:
   - name: Excellence Award, Future Architectural Engineering Competition
     year: 2017
     details: "Dancing with Whales; A Vacuum-Tunnel-Based Undersea City District"
+
+projects:
+  title: Projects
+  intro: >
+    Research projects on construction robotics, navigation, and worker safety monitoring.
+  assignments:
+  - title: Active Robot Vision with Perception-Aware Navigation for Worker Monitoring
+    link: "#"
+    tagline: "Perception-aware active vision & navigation for mobile robots under occlusion (ASCE ICCCV 2025 paper)."
+
+  - title: RL-Based Navigation for PPE Monitoring under Occlusion
+    link: "#"
+    tagline: "Reinforcement learning policy for PPE monitoring with occlusion-aware objectives (AIK 2025; Excellent Paper Award)."
+
+  - title: Utilization Analysis of Hazard & Risk Prevention Plan System
+    link: "#"
+    tagline: "Mixed-methods study on on-site use of hazard/risk prevention plans (JKICS 7(2), 2024)."
+
+  - title: Activity Classification for Low Back Disorder Risk using IMU
+    link: "#"
+    tagline: "Time-series IMU pipeline to classify activities and estimate LBD risk in construction tasks."
+
+  - title: Worker Stress Management with Wearable Biosensors
+    link: "#"
+    tagline: "EDA/HRV-based stress inference and real-time responsiveness for field deployment."
+
+  - title: Autonomous Construction Hoist & Computer Vision on Site
+    link: "#"
+    tagline: "Prototypes for precise hoist positioning and safe-zone detection with vision-based monitoring."
+
+  - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
+    link: "#"
+    tagline: "BIM + simulation to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
+
 
 external-activities:
   title: External Activities

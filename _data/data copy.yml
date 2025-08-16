@@ -1,0 +1,150 @@
+sidebar:
+  position: left
+  about: True
+  education: True
+
+  # Profile information
+  name: Chaewon Yang
+  tagline: M.S. Student <br>@Seoul National University
+  avatar: profile.png
+
+  # Sidebar links
+  email: chaewony@snu.ac.kr
+  phone: +82-10-7578-1943
+  timezone: Asia/Seoul
+  citizenship:
+  website: https://chaewony-17.github.io/
+  linkedin: chaewon-yang-0661ab303
+  github: chaewony-17
+
+  languages:
+    title: Languages
+    info:
+    - idiom: Korean
+      level: Native
+    - idiom: English
+      level: Advanced 
+
+  interests:
+    title: Interests
+    info:
+    - item: Traveling
+    - item: Snowboarding
+    - item: Cooking
+
+career-profile:
+  title: Hello, I'm Chaewon :)
+  summary: |
+    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R. Ahn. 
+    My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
+    I am particularly interested in Deep Reinforcement Learning (DRL), perception-aware navigation, and Vision-Language Models (VLMs) to advance intelligent robotic monitoring in construction sites.
+
+education:
+  title: Education
+  show_in_main: true
+  info:
+  - degree: MSc in Architectural Engineering
+    university: Seoul National University
+    time: Mar. 2024 – Present
+    details: |
+      GPA: 4.38/4.50  
+      Advisor: Prof. Changbum R. Ahn  
+      Research focus: construction robotics, DRL navigation, perception-aware monitoring
+  - degree: BSc in Architecture and Building Science
+    university: Chung-ang University
+    time: Mar. 2019 – Feb. 2024
+    details: |
+      GPA: 4.33/4.50 (Summa Cum Laude)  
+      Research on vision-based safety management, wearable sensors, and autonomous construction systems.
+
+research-interests:
+  title: Research Interests
+  items:
+  - Robotic Navigation
+  - Construction Robots
+
+experiences:
+  title: Experiences
+  info:
+  - role: Graduate Research Assistant
+    time: Mar. 2024 – Present
+    company: Construction Engineering & Management Lab, SNU
+    details: |
+      - Active Vision of Construction Site Mobile Robot  
+      - Activity Classification on Low Back Disorder using Wearable IMU Sensor  
+      - Analysis of On-Site Utilization of Hazard and Risk Prevention Plan System  
+  - role: Lab Intern
+    time: Jan. 2024 – Feb. 2024
+    company: Construction Engineering & Management Lab, SNU
+    details: |
+      - Assisted ongoing projects on robotic navigation and safety monitoring  
+  - role: Undergraduate Researcher
+    time: Feb. 2023 – Jun. 2023
+    company: Construction Technology Innovation Lab, Chung-Ang University
+    details: |
+      - Managed construction worker stress monitoring with biosensors  
+      - Autonomous construction hoist and computer vision applications  
+
+publications:
+  title: Publications
+  papers:
+  - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
+    authors: Yang C., Park J., Park M., Ahn C. R.
+    conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
+  - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
+    authors: Yang C., Park J., Park M., Ahn C. R.
+    conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
+  - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
+    authors: Ji, J., Won, J., Shin, S., Yoo, B., Yang, C., Lee, C., Park, M., Ahn, C. R.
+    conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
+
+awards:
+  title: Awards & Honors
+  list:
+  - name: Excellent Paper Award, AIK Spring Conference
+    year: 2025
+    details: Paper on RL-based navigation for PPE monitoring
+  - name: Summa Cum Laude
+    year: 2024
+    details: B.S. in Architectural Engineering, Chung-Ang University
+  - name: Grand Award, Chung-ang Architecture Exhibition
+    year: 2023
+    details: BIM-enabled Detection of Dynamic Blind Spots
+  - name: Academic Excellence Scholarship
+    year: 2023
+  - name: Duckshin Construction Safety Scholarship
+    year: 2023
+  - name: Chung-Ang Univ. Scholarship (Dean’s List)
+    year: 2019-2023
+  - name: Excellence Award, Future Architectural Engineering Competition
+    year: 2017
+    details: "Dancing with Whales; A Vacuum-Tunnel-Based Undersea City District"
+
+external-activities:
+  title: External Activities
+  sections:
+  - name: Certificates
+    items:
+      - Coding World News Editor 7th (2021)
+      - RoTIC Robotics Basic Training (2023)
+      - Neural Networks and Deep Learning (Coursera, 2023)
+      - KROS AI & Robotics Summer School (2025)
+  - name: Semi Projects
+    items:
+      - Youth Engineering Frontier Camp (2024)
+      - SNU Construction Research Workshop (1270th–1272th, 2024–2025)
+
+skills:
+  title: Skills & Proficiency
+  toolset:
+  - name: Python, C/C++, C#
+    level: Advanced
+  - name: Unity, ROS
+    level: Advanced
+  - name: Microsoft Office (Word/Excel/PowerPoint), Photoshop, Revit
+    level: Proficient
+  - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
+    level: Proficient
+
+footer: >
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

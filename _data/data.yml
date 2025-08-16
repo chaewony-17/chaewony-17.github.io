@@ -4,7 +4,7 @@ sidebar:
   education: True
 
   # Profile information
-  name: Chaewon Yang5
+  name: Chaewon Yang6
   tagline: M.S. Student <br>@Seoul National University
   avatar: profile.png
 
@@ -35,8 +35,8 @@ sidebar:
 career-profile:
   title: Hello, I'm Chaewon :)
   summary: |
-    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R. Ahn. 
-    My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
+    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R. Ahn. <br>
+    My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.<br>
     I am particularly interested in Deep Reinforcement Learning (DRL), perception-aware navigation, and Vision-Language Models (VLMs) to advance intelligent robotic monitoring in construction sites.
 
 education:
@@ -89,12 +89,15 @@ publications:
   title: Publications
   papers:
   - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
+    year: 2025
     authors: Yang C., Park J., Park M., Ahn C. R.
     conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
   - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
+    year: 2025
     authors: Yang C., Park J., Park M., Ahn C. R.
     conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
   - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
+    year: 2024
     authors: Ji, J., Won, J., Shin, S., Yoo, B., Yang, C., Lee, C., Park, M., Ahn, C. R.
     conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
 
@@ -127,7 +130,7 @@ projects:
   assignments:
   - title: Active Robot Vision with Perception-Aware Navigation for Worker Monitoring
     link: "#"
-    tagline: "Perception-aware active vision & navigation for mobile robots under occlusion (ASCE ICCCV 2025 paper)."
+    tagline: "Perception-aware active vision & navigation for mobile robots under occlusion (ASCE i3CE 2025 paper)."
 
   - title: RL-Based Navigation for PPE Monitoring under Occlusion
     link: "#"
@@ -151,7 +154,7 @@ projects:
 
   - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
     link: "#"
-    tagline: "BIM + simulation to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
+    tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
 
 external-activities:
@@ -178,7 +181,11 @@ skills:
   - name: Microsoft Office (Word/Excel/PowerPoint), Photoshop, Revit
     level: Proficient
   - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
+    level: Low
+  - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
     level: Proficient
 
 footer: >
+  © 2025 Chaewon Yang. All rights reserved. <br>
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+

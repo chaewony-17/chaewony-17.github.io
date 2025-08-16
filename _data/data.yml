@@ -1,283 +1,150 @@
-#
-# Be aware that even a small syntax error here can lead to failures in output.
-#
-
 sidebar:
-  position: left #right # position of the sidebar : left or right
-  about: True # set to False or comment line if you want to remove the "how to use?" in the sidebar
-  education: True # set to False if you want education in main section instead of in sidebar
+  position: left
+  about: True
+  education: True
 
   # Profile information
-  name: Chaewon Yang
+  name: Chaewon Yang33
   tagline: M.S. Student <br>@Seoul National University
-  avatar: profile.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+  avatar: profile.png
 
   # Sidebar links
   email: chaewony@snu.ac.kr
-  phone: +82)10-7578-1943
-  timezone: South Korea/Seoul # Enter your timezone, e.g., America/Havana, Africa/Casablanca, America/North_Dakota/Center
+  phone: +82-10-7578-1943
+  timezone: Asia/Seoul
   citizenship:
-  website: https://chaewony-17.github.io/ # Include the full website URL, including "http://" or "https://".
+  website: https://chaewony-17.github.io/
   linkedin: chaewon-yang-0661ab303
-  #xing: chaewony
   github: chaewony-17
-  #telegram: # add your nickname without '@' sign
-  gitlab:
-  bitbucket:
-  #bluesky: '@jekyllrb.bsky.social' # Specify your full Bluesky handle
-  #twitter: '@jekyllrb'
-  #stack-overflow: # Number/Username, e.g. 123456/alandoe
-  # codewars:
-  # goodreads: # Number-Username, e.g. 123456-alandoe
-  # mastodon: # Please include your full Mastodon link here.
-  # hackerrank: # Please provide your HackerRank username.
-  # leetcode: # Please provide your LeetCode username.
-  # pdf: # Add a PDF link here if you want to include a PDF custom version in your resume.
 
   languages:
     title: Languages
     info:
     - idiom: Korean
       level: Native
-
     - idiom: English
       level: Advanced 
-
-    # - idiom: Spanish
-    #   level: Professional
 
   interests:
     title: Interests
     info:
     - item: Traveling
-      link:
-
-
     - item: Snowboarding
-      link:
-
-
     - item: Cooking
-      link:
-
 
 career-profile:
   title: Hello, I'm Chaewon :)
   summary: |
-    I am a 2nd year of Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R.Ahn. 
-    As a member of the SNUCEM Lab, my research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
-    My current work investigates how Deep Reinforcement Learning (DRL) and perception-aware navigation can enable mobile robots to monitor workers effectively on construction sites, even under challenging conditions such as occlusion. 
-    As a further step, I am particularly interested in enhancing robots’ decision-making capabilities in complex contexts and environments by incorporating Vision-Language Model (VLM) inference, thereby contributing to more sophisticated and intelligent monitoring operations.
-
+    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R. Ahn. 
+    My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
+    I am particularly interested in Deep Reinforcement Learning (DRL), perception-aware navigation, and Vision-Language Models (VLMs) to advance intelligent robotic monitoring in construction sites.
 
 education:
   title: Education
-  show_in_main: true 
+  show_in_main: true
   info:
   - degree: MSc in Architectural Engineering
     university: Seoul National University
-    time: 2024 - Present
+    time: Mar. 2024 – Present
     details: |
-      I am pursuing my M.S. in Architectural Engineering at Seoul National University (GPA 4.18/4.30) specifically in Construction Engineering & Management Lab. 
-      My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments. 
-      In particular, I investigate Deep Reinforcement Learning (DRL) and perception-aware navigation, incorporating Vision-Language Model (VLM) inference to advance intelligent monitoring in real-world construction sites.
-        - Bullet point
-        - Bullet point
-  - degree: BSc in Architectural Engineering
+      GPA: 4.38/4.50  
+      Advisor: Prof. Changbum R. Ahn  
+      Research focus: construction robotics, DRL navigation, perception-aware monitoring
+  - degree: BSc in Architecture and Building Science
     university: Chung-ang University
-    time: 2019 - 2023
+    time: Mar. 2019 – Feb. 2024
     details: |
-      I earned my B.S. in Architecture and Building Science from Chung-Ang University, graduating at the top of my class (GPA 4.33/4.50). 
-      During my undergraduate studies, I conducted research on vision-based safety management, wearable sensor–based worker stress monitoring, and autonomous construction systems at the Construction Technology Innovation Laboratory(ConTILab). 
-      I also gained hands-on experience in applying machine learning to vision data and extending it to robotic visual mapping, which further developed into expertise with Robot Operating System (ROS), SLAM, and autonomous navigation technologies.
-        - Bullet point
-        - Bullet point
+      GPA: 4.33/4.50 (Summa Cum Laude)  
+      Research on vision-based safety management, wearable sensors, and autonomous construction systems.
+
+research-interests:
+  title: Research Interests
+  items:
+  - Robotic Navigation
+  - Construction Robots
 
 experiences:
   title: Experiences
   info:
   - role: Graduate Research Assistant
-    time: 2024 - Present
-    company: Construction Engineering & Management Lab. @SNU
+    time: Mar. 2024 – Present
+    company: Construction Engineering & Management Lab, SNU
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem. Nulla consequat massa quis
-      enim. Donec pede justo. Sed ut perspiciatis unde omnis iste natus
-      error sit voluptatem accusantium doloremque laudantium, totam rem
-      aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-      architecto beatae vitae dicta sunt explicabo.
-        - Bullet point
-        - Bullet point
-  - role: Senior Software Engineer
-    time: 2014 - 2015
-    company: Google, London
+      - Active Vision of Construction Site Mobile Robot  
+      - Activity Classification on Low Back Disorder using Wearable IMU Sensor  
+      - Analysis of On-Site Utilization of Hazard and Risk Prevention Plan System  
+  - role: Lab Intern
+    time: Jan. 2024 – Feb. 2024
+    company: Construction Engineering & Management Lab, SNU
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-  - role: Undergraduate Research Assistant
-    time: 2023 - 2023
-    company: Amazon, London
+      - Assisted ongoing projects on robotic navigation and safety monitoring  
+  - role: Undergraduate Researcher
+    time: Feb. 2023 – Jun. 2023
+    company: Construction Technology Innovation Lab, Chung-Ang University
     details: |
-      Describe your role here lorem ipsum dolor sit amet, consectetuer
-      adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
-      Cum sociis natoque penatibus et magnis dis parturient montes,
-      nascetur ridiculus mus. Donec quam felis, ultricies nec,
-      pellentesque eu, pretium quis, sem.
-        - Bullet point
-        - Bullet point
-
-certifications:
-  title: Certifications
-  list:
-  - name: CV Builder
-    start: 2020
-    end: 2021
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.google.com
-    credentialname: Google
-    details: |
-      Details about cert. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-      Second paragraph. Sed eleifend enim ante, vitae efficitur purus
-      fringilla vel. Ut euismod, sem sed vulputate venenatis,
-      justo diam viverra velit, sed rhoncus leo leo eu justo.
-      Suspendisse placerat risus ante, sed porta nisi blandit at.
-  - name: Git learning
-    start: 2019
-    end:
-    organization: Microsoft
-    credentialid: 111-222
-    credentialurl: www.github.com
-    credentialname: Github
-    details: |
-      Older certification. Lorem ipsum dolor sit amet, consectetur
-      adipiscing elit.
-      Nullam eget orci purus. Nullam ultrices neque nibh.
-      Aenean fermentum, felis vulputate suscipit accumsan,
-      sem enim bibendum augue, sed convallis arcu lacus at dui.
-      Pellentesque et nibh suscipit, vestibulum turpis eu, semper tortor.
-      Praesent felis nibh, eleifend id eleifend id, dictum id enim.
-      Praesent venenatis erat non augue suscipit consectetur.
-
-projects:
-  title: Projects
-  intro: >
-    You can list your side projects in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  assignments:
-  - title: Velocity
-    link: "#hook"
-    tagline: "A responsive website template designed to help startups promote, market and sell their products."
-
-  - title: DevStudio
-    link: "#"
-    tagline: "A responsive website template designed to help web developers/designers market their services."
-
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
-
-oss:
-  title: OSS Contributions
-  intro: >
-    You can list your open source software contributions in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.
-  contributions:
-  - title: Tempo
-    link: "#"
-    tagline: "A responsive website template designed to help startups promote their products or services and to attract users &amp; investors"
-
-  - title: Atom
-    link: "#"
-    tagline: "A comprehensive website template solution for startups/developers to market their mobile apps."
-
-  - title: Delta
-    link: "#"
-    tagline: "A responsive Bootstrap one page theme designed to help app developers promote their mobile apps"
+      - Managed construction worker stress monitoring with biosensors  
+      - Autonomous construction hoist and computer vision applications  
 
 publications:
   title: Publications
-  intro: |
-    You can list your publications in this section. Lorem ipsum dolor sit
-    amet, consectetur adipiscing elit. Vestibulum et ligula in nunc
-    bibendum fringilla a eu lectus.
   papers:
-  - title: The Art of Computer Programming
-    link: "#"
-    authors: Donald E. Knuth
-    conference: Addison-Wesley, 1968
+  - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
+    authors: Yang C., Park J., Park M., Ahn C. R.
+    conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
+  - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
+    authors: Yang C., Park J., Park M., Ahn C. R.
+    conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
+  - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
+    authors: Ji, J., Won, J., Shin, S., Yoo, B., Yang, C., Lee, C., Park, M., Ahn, C. R.
+    conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
 
-  - title: "Genetic Programming III: Darwinian Invention &amp; Problem Solving"
-    link: "#"
-    authors: Koza, J.R., Andre, D., Bennett, F.H., Keane, M.A.
-    conference: "Morgan Kaufmann Publishers Inc., San Francisco, CA, USA, 1st edn. (1999)"
-
-  - title: A syntax directed compiler for Algol 60
-    link: "#"
-    authors: Edgar T. Irons
-    conference: "Comm. ACM 4 (1961), 51–55"
-
-recommendations:
-  title: Recommendations
+awards:
+  title: Awards & Honors
   list:
-  - person: Yareli Perez
-    email: perezyareli@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      Alan Doe is a super employee!
-  - person: Lara Henderson
-    email: larah@example.com
-    phone: 012 345 6789
-    role: General Director at example.com
-    recommendation: |
-      I would like to work with Alan Doe again!
+  - name: Excellent Paper Award, AIK Spring Conference
+    year: 2025
+    details: Paper on RL-based navigation for PPE monitoring
+  - name: Summa Cum Laude
+    year: 2024
+    details: B.S. in Architectural Engineering, Chung-Ang University
+  - name: Grand Award, Chung-ang Architecture Exhibition
+    year: 2023
+    details: BIM-enabled Detection of Dynamic Blind Spots
+  - name: Academic Excellence Scholarship
+    year: 2023
+  - name: Duckshin Construction Safety Scholarship
+    year: 2023
+  - name: Chung-Ang Univ. Scholarship (Dean’s List)
+    year: 2019-2023
+  - name: Excellence Award, Future Architectural Engineering Competition
+    year: 2017
+    details: "Dancing with Whales; A Vacuum-Tunnel-Based Undersea City District"
 
-      He is a great employee!
+external-activities:
+  title: External Activities
+  sections:
+  - name: Certificates
+    items:
+      - Coding World News Editor 7th (2021)
+      - RoTIC Robotics Basic Training (2023)
+      - Neural Networks and Deep Learning (Coursera, 2023)
+      - KROS AI & Robotics Summer School (2025)
+  - name: Semi Projects
+    items:
+      - Youth Engineering Frontier Camp (2024)
+      - SNU Construction Research Workshop (1270th–1272th, 2024–2025)
 
 skills:
-  title: Skills &amp; Proficiency
-
+  title: Skills & Proficiency
   toolset:
-  - name: Python & Django
-    level: 98%
-
-  - name: Javascript & jQuery
-    level: 98%
-
-  - name: Angular
-    level: 98%
-
-  - name: HTML5 & CSS
-    level: 95%
-
-  - name: Ruby on Rails
-    level: 85%
-
-  - name: Sketch & Photoshop
-    level: 60%
+  - name: Python, C/C++, C#
+    level: Advanced
+  - name: Unity, ROS
+    level: Advanced
+  - name: Microsoft Office (Word/Excel/PowerPoint), Photoshop, Revit
+    level: Proficient
+  - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
+    level: Proficient
 
 footer: >
   Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

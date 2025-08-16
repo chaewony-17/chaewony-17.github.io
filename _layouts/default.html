@@ -18,15 +18,15 @@
   </button>
 
 
-  <!-- ✅ 오른쪽 상단 링크 -->
-  <nav class="toplinks d-print-none">
-    <a href="{{ '/publications/' | relative_url }}">Publications</a>
-    <a href="{{ '/projects/' | relative_url }}">Projects</a>
-    <a href="{{ '/about/' | relative_url }}">About</a>
-    <a href="https://docs.google.com/document/d/1W_OZzRfeHJns1BMMXdq74GmU2znqBCtC/edit?usp=sharing&ouid=113452926778106786423&rtpof=true&sd=true" target="_blank">CV</a>
-
-  </nav>
-
+   <!-- ✅ 상단 헤더 영역 (스크롤하면 같이 위로 사라짐) -->
+  <header class="site-header d-print-none">
+    <nav class="toplinks">
+      <a href="{{ '/publications/' | relative_url }}">Publications</a>
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="https://docs.google.com/document/d/1W_OZzRfeHJns1BMMXdq74GmU2znqBCtC/edit?usp=sharing&ouid=113452926778106786423&rtpof=true&sd=true" target="_blank">CV</a>
+    </nav>
+  </header>
 
   <div class="wrapper">
     {% include sidebar.html %}

@@ -4,7 +4,7 @@ sidebar:
   education: True
 
   # Profile information
-  name: Chaewon Yang8
+  name: Chaewon Yang
   tagline: M.S. Student <br>@Seoul National University
   avatar: profile.png
 
@@ -29,8 +29,6 @@ sidebar:
     title: Interests
     info:
     - item: Traveling
-    - item: Snowboarding
-    - item: Cooking
 
 career-profile:
   title: Hello, I'm Chaewon :)
@@ -88,7 +86,7 @@ experiences:
 publications:
   title: Publications
   intro: >
-    Selected publications in construction robotics and safety monitoring.
+    Publications in construction robotics and safety monitoring since 2024.
   papers:
     - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
       authors: Yang C., Park J., Park M., Ahn C. R.
@@ -182,17 +180,15 @@ skills:
   title: Skills & Proficiency
   toolset:
   - name: Python, C/C++, C#
-    level: Advanced
+    level: 92%
   - name: Unity, ROS
-    level: Advanced
+    level: 88%
   - name: Microsoft Office (Word/Excel/PowerPoint), Photoshop, Revit
-    level: Proficient
+    level: 92%
   - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
-    level: Low
-  - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
-    level: Proficient
+    level: 75%
 
 footer: >
   © 2025 Chaewon Yang. All rights reserved. <br>
-  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
+  Designed with <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>
 

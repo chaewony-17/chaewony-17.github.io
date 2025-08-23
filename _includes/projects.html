@@ -11,7 +11,14 @@
   </h2>
 
   {% for section in sections %}
-    <h3>{{ section.title }}</h3>
+    <h3>
+      {% if section.url %}
+        <a href="{{ section.url }}" target="_blank">{{ section.title }}</a>
+      {% else %}
+        {{ section.title }}
+      {% endif %}
+    </h3>
+
 
     {% if section.intro %}
       <div class="intro"><p>{{ section.intro }}</p></div>

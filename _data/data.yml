@@ -162,6 +162,20 @@ projects:
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
 
+  - title: Seminar Work
+  - url: "https://cem.snu.ac.kr/Workshop"
+    intro: >
+      Selected seminar presentations and term projects.
+    assignments:
+      - title: Active Vision - Deep Reinforcement Learning for Robotic Path Planning
+        link: "https://cem.snu.ac.kr/Workshop"
+        tagline: "SNU Construction Research Workshop (1270th,1271th)."
+
+      - title: Active Vision - VQA based Navigation for Robotic Monitoring on construction site
+        link: "https://cem.snu.ac.kr/Workshop"
+        tagline: "SNU Construction Research Workshop (1272th)."
+
+
 external-activities:
   title: External Activities
   sections:

@@ -1,6 +1,5 @@
-{% raw %}
-{% assign projects = site.data.data.projects %}
-{% if projects %}
+{% assign sections = site.data.data.projects %}
+{% if sections %}
 <section class="section projects-section">
 
   <h2 class="section-title">
@@ -8,21 +7,17 @@
       <i class="fas fa-circle fa-stack-2x"></i>
       <i class="fas fa-archive fa-stack-1x fa-inverse"></i>
     </span>
-    {{ projects.title }}
+    Projects
   </h2>
 
-  {% if projects.intro %}
-  <div class="intro">
-    <p>{{ projects.intro }}</p>
-  </div>
-  {% endif %}
+  {% for section in sections %}
+    <h3>{{ section.title }}</h3>
 
-  {%- assign research = projects.assignments | where_exp: "p", "p.category != 'Personal'" -%}
-  {%- assign personal = projects.assignments | where: "category", "Personal" -%}
+    {% if section.intro %}
+      <div class="intro"><p>{{ section.intro }}</p></div>
+    {% endif %}
 
-  {% if research and research.size > 0 %}
-    <h3>Research Projects</h3>
-    {% for project in research %}
+    {% for project in section.assignments %}
       <div class="item">
         <span class="project-title">
           {% if project.link %}
@@ -34,24 +29,8 @@
         {% if project.tagline %} - <span class="project-tagline">{{ project.tagline }}</span>{% endif %}
       </div>
     {% endfor %}
-  {% endif %}
 
-  {% if personal and personal.size > 0 %}
-    <h3>Personal Projects</h3>
-    {% for project in personal %}
-      <div class="item">
-        <span class="project-title">
-          {% if project.link %}
-            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-          {% else %}
-            {{ project.title }}
-          {% endif %}
-        </span>
-        {% if project.tagline %} - <span class="project-tagline">{{ project.tagline }}</span>{% endif %}
-      </div>
-    {% endfor %}
-  {% endif %}
+  {% endfor %}
 
 </section>
 {% endif %}
-{% endraw %}

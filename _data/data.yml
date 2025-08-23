@@ -135,7 +135,6 @@ projects:
       - title: Active Robot Vision with Perception-Aware Navigation for Worker Monitoring
         link: "#"
         tagline: "Perception-aware active vision & navigation... (ASCE i3CE 2025)."
-
       - title: Utilization Analysis of Hazard & Risk Prevention Plan System
         link: "https://cem.snu.ac.kr/research/83"
         tagline: "Mixed-methods study on on-site use... (JKICS 2024)."
@@ -146,33 +145,28 @@ projects:
       - title: Activity Classification for Low Back Disorder Risk using IMU
         link: "#"
         tagline: "Time-series IMU pipeline to classify activities..."
-
       - title: Worker Stress Management with Wearable Biosensors
         link: "#"
         tagline: "EDA/HRV-based stress inference and real-time responsiveness..."
-
       - title: Autonomous Construction Hoist & Computer Vision on Site
         link: "#"
         tagline: "Prototypes for precise hoist positioning and safe-zone detection..."
-
       - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
         link: "#"
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
-
   - title: Seminar Work
-  - url: "https://chaewony-17.github.io/seminar/"
+    url: "https://chaewony-17.github.io/seminar/"   # ✅ 같은 아이템 안으로
     intro: >
+      Selected seminar presentations and term projects.
     assignments:
       - title: Active Vision - Deep RL for Robotic Path Planning
         link: "https://cem.snu.ac.kr/Workshop"
-        file: "/assets/slides/seminar_1270.pdf"   # ← 로컬 PDF
+        file: "/assets/slides/seminar_1270.pdf"
         tagline: "SNU Construction Research Workshop (1270th,1271th)."
-
       - title: VQA-based Navigation for Robotic Monitoring
-        file: "/assets/slides/VQA_Navigation.pptx"               # ← 로컬 PPTX
+        file: "/assets/slides/VQA_Navigation.pptx"
         tagline: "SNU Construction Research Workshop (1272th)."
-
 
 external-activities:
   title: External Activities

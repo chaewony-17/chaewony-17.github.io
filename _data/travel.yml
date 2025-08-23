@@ -1,0 +1,14 @@
+# _data/travel.yml
+- name: Tokyo, Japan
+  lat: 35.6762
+  lng: 139.6503
+  images:
+    - /assets/travel/osaka/osaka.jpg
+    - /assets/travel/osaka/osaka.jpg
+
+- name: Seoul, South Korea
+  lat: 37.5665
+  lng: 126.9780
+  images:
+    - /assets/travel/seoul/jeju1.jpg
+    - /assets/travel/seoul/jeju2.jpg

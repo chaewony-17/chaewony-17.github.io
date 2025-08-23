@@ -4,4 +4,148 @@ title: Home
 permalink: /
 ---
 
-<!-- intentionally left blank: keep sidebar only -->
+<section class="section home-hero">
+  <h1 class="home-title">안녕 나는 채원이야 :)</h1>
+  <p class="home-tagline">
+    I'm a master's student at Seoul National University, and I’m all about learning by doing. 
+    I love exploring new places—travel is my favorite hobby—and below are some of the destinations I’ve experienced!
+  </p>
+</section>
+
+<section class="section travel-map-section">
+  <h2 class="section-title">
+    <span class="fa-stack fa-xs">
+      <i class="fas fa-circle fa-stack-2x"></i>
+      <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+    </span>
+    Where I've Been
+  </h2>
+
+  <div id="travel-map" class="travel-map d-print-none" role="region" aria-label="Travel Map"></div>
+
+  <!-- Image gallery modal -->
+  <div id="gallery-modal" class="gallery-modal d-print-none" aria-hidden="true">
+    <div class="gallery-content">
+      <button class="gallery-close" aria-label="Close">&times;</button>
+      <h3 id="gallery-title" class="job-title" style="margin-top:0;"></h3>
+      <div id="gallery-grid" class="gallery-grid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Leaflet CSS/JS (CDN) -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+/>
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
+<script>
+  // 1) 여행 데이터 (YAML -> JSON)
+  //    _data/travel.yml 의 내용을 가져옴 (2번에서 생성)
+  const travelData = {{ site.data.travel | jsonify | default: '[]' }};
+
+  // 2) 지도 초기화
+  const map = L.map('travel-map', {
+    scrollWheelZoom: false,
+    worldCopyJump: true
+  }).setView([20, 0], 2);
+
+  // OSM 타일 레이어
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OSM</a>'
+  }).addTo(map);
+
+  // 3) 마커 추가 + 클릭 시 갤러리 열기
+  const markers = [];
+  travelData.forEach((loc) => {
+    if (!loc.lat || !loc.lng) return;
+    const marker = L.marker([loc.lat, loc.lng]).addTo(map);
+    marker.bindTooltip(loc.name || 'Unknown', {direction: 'top', offset: [0, -8]});
+    marker.on('click', () => openGallery(loc));
+    markers.push(marker);
+  });
+
+  // 4) 갤러리 모달 로직
+  const modal = document.getElementById('gallery-modal');
+  const titleEl = document.getElementById('gallery-title');
+  const gridEl = document.getElementById('gallery-grid');
+  const closeBtn = document.querySelector('.gallery-close');
+
+  function openGallery(loc) {
+    titleEl.textContent = loc.name || 'My Trip';
+    gridEl.innerHTML = '';
+
+    const imgs = loc.images || [];
+    if (imgs.length === 0) {
+      gridEl.innerHTML = '<p>No photos yet. (Coming soon!)</p>';
+    } else {
+      imgs.forEach((src) => {
+        const item = document.createElement('a');
+        item.href = src;
+        item.target = '_blank';
+        item.className = 'gallery-item';
+        const img = document.createElement('img');
+        img.src = src;
+        img.alt = (loc.name || 'Trip') + ' photo';
+        item.appendChild(img);
+        gridEl.appendChild(item);
+      });
+    }
+
+    modal.setAttribute('aria-hidden', 'false');
+    modal.classList.add('open');
+  }
+
+  function closeGallery() {
+    modal.setAttribute('aria-hidden', 'true');
+    modal.classList.remove('open');
+  }
+
+  closeBtn.addEventListener('click', closeGallery);
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) closeGallery();
+  });
+
+  // 5) 마커 전체가 보이도록 뷰 조정 (데이터가 있을 경우)
+  if (markers.length > 0) {
+    const group = L.featureGroup(markers);
+    map.fitBounds(group.getBounds().pad(0.25));
+  }
+</script>
+
+<style>
+  /* 최소 스타일: 기존 폰트/색은 테마 유지, 크기만 조정 */
+  .home-hero { margin-bottom: 1.25rem; }
+  .home-title { font-size: 2rem; margin: .25rem 0 .5rem; }
+  .home-tagline { font-size: 1.05rem; line-height: 1.55; }
+
+  .travel-map { width: 100%; height: 480px; border-radius: 8px; overflow: hidden; border: 1px solid #eaeaea; }
+
+  /* 갤러리 모달 */
+  .gallery-modal {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,.5);
+    display: none; align-items: center; justify-content: center;
+    padding: 2rem; z-index: 9999;
+  }
+  .gallery-modal.open { display: flex; }
+  .gallery-content {
+    background: #fff; max-width: 1000px; width: 100%;
+    border-radius: 12px; padding: 1.25rem 1.25rem 1rem; position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,.15);
+  }
+  .gallery-close {
+    position: absolute; top: .5rem; right: .75rem;
+    border: 0; background: transparent; font-size: 2rem; line-height: 1; cursor: pointer;
+  }
+  .gallery-grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: .75rem;
+    margin-top: .5rem;
+  }
+  .gallery-item { display: block; border-radius: 8px; overflow: hidden; border: 1px solid #eee; }
+  .gallery-item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+</style>

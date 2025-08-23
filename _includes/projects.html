@@ -11,13 +11,13 @@
   </h2>
 
   {% for section in sections %}
-    <h3 class="section-subtitle">
+    <h4 class="section-subtitle">
       {% if section.url %}
         <a href="{{ section.url }}" target="_blank">{{ section.title }}</a>
       {% else %}
         {{ section.title }}
       {% endif %}
-    </h3>
+    </h4>
 
     {% if section.intro %}
       <div class="intro">

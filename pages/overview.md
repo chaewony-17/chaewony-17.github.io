@@ -9,5 +9,4 @@ permalink: /overview/
 {% include experiences.html %}
 {% include publications.html %}
 {% include projects.html %}
-# {% include external-activities.html %}
 {% include skills.html %}

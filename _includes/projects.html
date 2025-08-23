@@ -11,7 +11,7 @@
   </h2>
 
   {% for section in sections %}
-    <h3>
+    <h3 class="section-subtitle">
       {% if section.url %}
         <a href="{{ section.url }}" target="_blank">{{ section.title }}</a>
       {% else %}
@@ -19,25 +19,26 @@
       {% endif %}
     </h3>
 
-
     {% if section.intro %}
-      <div class="intro"><p>{{ section.intro }}</p></div>
+      <div class="intro">
+        {{ section.intro | markdownify }}
+      </div><!--//intro-->
     {% endif %}
 
     {% for project in section.assignments %}
       <div class="item">
-        <span class="project-title">
-          {% if project.link %}
-            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-          {% else %}
-            {{ project.title }}
-          {% endif %}
-        </span>
-        {% if project.tagline %} - <span class="project-tagline">{{ project.tagline }}</span>{% endif %}
-      </div>
+        {% if project.link %}
+          <li><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></li>
+        {% else %}
+          <li>{{ project.title }}</li>
+        {% endif %}
+        {% if project.tagline %}
+          <div class="project-tagline">{{ project.tagline }}</div>
+        {% endif %}
+      </div><!--//item-->
     {% endfor %}
 
   {% endfor %}
 
-</section>
+</section><!--//section-->
 {% endif %}

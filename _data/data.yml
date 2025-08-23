@@ -155,8 +155,7 @@ projects:
         link: "#"
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
-  - title: Seminar Work
-    url: "https://chaewony-17.github.io/seminar/"   # ✅ 같은 아이템 안으로
+  - title: Seminar Work   # ✅ 같은 아이템 안으로
     intro: >
       Selected seminar presentations and term projects.
     assignments:

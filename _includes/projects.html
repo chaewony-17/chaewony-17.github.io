@@ -11,13 +11,14 @@
   </h2>
 
   {% for section in sections %}
-    <h4 class="section-subtitle">
+    <h3 class="job-title"> 
       {% if section.url %}
         <a href="{{ section.url }}" target="_blank">{{ section.title }}</a>
       {% else %}
         {{ section.title }}
       {% endif %}
-    </h4>
+    </h3>
+
 
     {% if section.title == "Seminar Work" %}
       <p class="more-link" style="margin-top:-2px;">

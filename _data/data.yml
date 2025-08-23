@@ -156,8 +156,6 @@ projects:
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
   - title: Seminar Work   # ✅ 같은 아이템 안으로
-    intro: >
-      Selected seminar presentations and term projects.
     assignments:
       - title: Active Vision - Deep RL for Robotic Path Planning
         link: "https://cem.snu.ac.kr/Workshop"

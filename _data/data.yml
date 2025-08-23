@@ -145,19 +145,19 @@ projects:
     intro: >
       Independent projects exploring wearable sensing, stress monitoring, and safety in construction.
     assignments:
-      - title: Activity Classification for Low Back Disorder Risk using IMU
+      - title: Activity Classification for Low Back Disorder Risk using IMU<br>
         link: "#"
         tagline: "Time-series IMU pipeline to classify activities..."
 
-      - title: Worker Stress Management with Wearable Biosensors
+      - title: Worker Stress Management with Wearable Biosensors<br>
         link: "#"
         tagline: "EDA/HRV-based stress inference and real-time responsiveness..."
 
-      - title: Autonomous Construction Hoist & Computer Vision on Site
+      - title: Autonomous Construction Hoist & Computer Vision on Site<br>
         link: "#"
         tagline: "Prototypes for precise hoist positioning and safe-zone detection..."
 
-      - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
+      - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety<br>
         link: "#"
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 

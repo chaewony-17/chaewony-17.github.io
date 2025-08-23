@@ -20,7 +20,7 @@
     </h4>
 
     {% if section.title == "Seminar Work" %}
-      <p class="more-link" style="margin-top:-6px;">
+      <p class="more-link" style="margin-top:-2px;">
         <a href="{{ '/seminar/' | relative_url }}">See Seminar Work (PDF/PPT) →</a>
       </p>
     {% endif %}
@@ -33,25 +33,43 @@
 
     {% for project in section.assignments %}
       <div class="item">
-        <h3 class="job-title">
-        {% if project.link %}
-          <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        {% else %}
-          {{ project.title }}
-        {% endif %}
-        </h3>
-        {% if project.tagline %}
-          <div class="details">{{ project.tagline | markdownify }}</div>
+        <div class="meta">
+          <div class="upper-row">
+            <h3 class="job-title">
+              {% if project.link %}
+                <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+              {% else %}
+                {{ project.title }}
+              {% endif %}
+            </h3>
+            {% if project.time %}
+              <div class="time">{{ project.time }}</div>
+            {% endif %}
+          </div><!--//upper-row-->
+
+          {% if project.affiliation %}
+            <div class="company">{{ project.affiliation }}</div>
+          {% endif %}
+        </div><!--//meta-->
+
+        {% if project.details or project.tagline %}
+          <div class="details">
+            {% if project.details %}
+              {{ project.details | markdownify }}
+            {% else %}
+              {{ project.tagline | markdownify }}
+            {% endif %}
+          </div><!--//details-->
         {% endif %}
 
         {%- comment -%}
-        파일 임베드는 여기서 하지 않음.
-        원하면 세미나 항목별 앵커로도 유도 가능:
+        파일 임베드는 /seminar/ 페이지에서만 처리합니다.
+        필요 시 아래 링크처럼 각 항목 앵커로 유도 가능:
         <a href="{{ '/seminar/#' | append: (project.title | slugify) | relative_url }}">View PDF/PPT</a>
         {%- endcomment -%}
-      </div>
+      </div><!--//item-->
     {% endfor %}
   {% endfor %}
 
-</section>
+</section><!--//section-->
 {% endif %}

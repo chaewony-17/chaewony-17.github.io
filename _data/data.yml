@@ -92,19 +92,19 @@ publications:
       authors: Yang C., Park J., Park M., Ahn C. R.
       conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
       year: 2025
-      link: "#"
+      link: 
 
     - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
       authors: Yang C., Park J., Park M., Ahn C. R.
       conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
       year: 2025
-      link: "#"
+      link: 
 
     - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
       authors: Ji J., Won J., Shin S., Yoo B., Yang C., Lee C., Park M., Ahn C. R.
       conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
       year: 2024
-      link: "#"
+      link: 
 
 awards:
   title: Awards & Honors
@@ -133,7 +133,7 @@ projects:
     intro: >
     assignments:
       - title: Active Robot Vision with Perception-Aware Navigation for Worker Monitoring
-        link: "#"
+        link: 
         tagline: "Perception-aware active vision & navigation... (ASCE i3CE 2025)."
       - title: Utilization Analysis of Hazard & Risk Prevention Plan System
         link: "https://cem.snu.ac.kr/research/83"
@@ -143,16 +143,16 @@ projects:
     intro: >
     assignments:
       - title: Activity Classification for Low Back Disorder Risk using IMU
-        link: "#"
+        link: 
         tagline: "Time-series IMU pipeline to classify activities..."
       - title: Worker Stress Management with Wearable Biosensors
-        link: "#"
+        link: 
         tagline: "EDA/HRV-based stress inference and real-time responsiveness..."
       - title: Autonomous Construction Hoist & Computer Vision on Site
-        link: "#"
+        link: 
         tagline: "Prototypes for precise hoist positioning and safe-zone detection..."
       - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
-        link: "#"
+        link: 
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
   - title: Seminar Work   # ✅ 같은 아이템 안으로

@@ -27,24 +27,19 @@
 
     {% for project in section.assignments %}
       <div class="item">
-        <div class="meta">
-          <div class="upper-row">
-            <h3 class="job-title">
-              {% if project.link %}
-                <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-              {% else %}
-                {{ project.title }}
-              {% endif %}
-            </h3>
-            {% if project.time %}
-              <div class="time">{{ project.time }}</div>
-            {% endif %}
-          </div><!--//upper-row-->
+        <div class="item">
+        {% if project.link %}
+          <li><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></li>
+        {% else %}
+          <li>{{ project.title }}</li>
+        {% endif %}
 
-          {% if project.affiliation %}
-            <div class="company">{{ project.affiliation }}</div>
-          {% endif %}
-        </div><!--//meta-->
+        {% if project.affiliation %}
+          <div class="company">{{ project.affiliation }}</div>
+        {% endif %}
+        {% if project.time %}
+          <div class="time">{{ project.time }}</div>
+        {% endif %}
 
         <div class="details">
           {% if project.details %}
@@ -54,6 +49,7 @@
           {% endif %}
         </div><!--//details-->
       </div><!--//item-->
+
     {% endfor %}
   {% endfor %}
 

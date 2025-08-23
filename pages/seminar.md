@@ -30,10 +30,10 @@ permalink: /seminar/
           {{ work.title }}
         {% endif %}
       </span>
-      {% if work.tagline %} - <span class="project-tagline">{{ work.tagline }}</span>{% endif %}
+      {% if work.tagline %}
+        <div class="details">{{ work.tagline }}</div>
+      {% endif %}
     </div>
   {% endfor %}
 </section>
-{% else %}
-<p>No seminar items found.</p>
 {% endif %}

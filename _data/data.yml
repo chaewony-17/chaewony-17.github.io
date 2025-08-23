@@ -131,7 +131,6 @@ awards:
 projects:
   - title: Research Projects
     intro: >
-      Research projects on construction robotics, navigation, and worker safety monitoring.
     assignments:
       - title: Active Robot Vision with Perception-Aware Navigation for Worker Monitoring
         link: "#"
@@ -143,21 +142,20 @@ projects:
 
   - title: Personal Projects
     intro: >
-      Independent projects exploring wearable sensing, stress monitoring, and safety in construction.
     assignments:
-      - title: Activity Classification for Low Back Disorder Risk using IMU<br>
+      - title: Activity Classification for Low Back Disorder Risk using IMU
         link: "#"
         tagline: "Time-series IMU pipeline to classify activities..."
 
-      - title: Worker Stress Management with Wearable Biosensors<br>
+      - title: Worker Stress Management with Wearable Biosensors
         link: "#"
         tagline: "EDA/HRV-based stress inference and real-time responsiveness..."
 
-      - title: Autonomous Construction Hoist & Computer Vision on Site<br>
+      - title: Autonomous Construction Hoist & Computer Vision on Site
         link: "#"
         tagline: "Prototypes for precise hoist positioning and safe-zone detection..."
 
-      - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety<br>
+      - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
         link: "#"
         tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
 
@@ -165,7 +163,6 @@ projects:
   - title: Seminar Work
   - url: "https://cem.snu.ac.kr/Workshop"
     intro: >
-      Selected seminar presentations and term projects.
     assignments:
       - title: Active Vision - Deep Reinforcement Learning for Robotic Path Planning
         link: "https://cem.snu.ac.kr/Workshop"
@@ -194,13 +191,15 @@ skills:
   title: Skills & Proficiency
   toolset:
   - name: Python, C/C++, C#
-    level: 92%
+    level: 90%
   - name: Unity, ROS
-    level: 88%
-  - name: Microsoft Office (Word/Excel/PowerPoint), Photoshop, Revit
+    level: 85%
+  - name: Microsoft Office (Word/Excel/PowerPoint)
     level: 92%
+  - name: Revit
+    level: 85%
   - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
-    level: 75%
+    level: 70%
 
 footer: >
   © 2025 Chaewon Yang. All rights reserved.

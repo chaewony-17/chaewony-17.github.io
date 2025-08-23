@@ -27,12 +27,13 @@
 
     {% for project in section.assignments %}
       <div class="item">
-        <div class="item">
-        {% if project.link %}
-          <li><a href="{{ project.link }}" target="_blank">{{ project.title }}</a></li>
-        {% else %}
-          <li>{{ project.title }}</li>
-        {% endif %}
+        <div class="project-title">
+          {% if project.link %}
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+          {% else %}
+            {{ project.title }}
+          {% endif %}
+        </div>
 
         {% if project.affiliation %}
           <div class="company">{{ project.affiliation }}</div>
@@ -49,6 +50,7 @@
           {% endif %}
         </div><!--//details-->
       </div><!--//item-->
+
 
     {% endfor %}
   {% endfor %}

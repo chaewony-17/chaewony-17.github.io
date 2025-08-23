@@ -30,51 +30,52 @@ permalink: /seminar/
     {% endif %}
 
     {% for work in seminar.assignments %}
-      {%- assign anchor = work.title | slugify -%}
-      <div class="item" id="{{ anchor }}">
-        <div class="meta">
-          <div class="upper-row">
-            <h3 class="job-title">
-              {% if work.link %}
-                <a href="{{ work.link }}" target="_blank">{{ work.title }}</a>
-              {% else %}
-                {{ work.title }}
-              {% endif %}
-            </h3>
-            {% if work.time %}<div class="time">{{ work.time }}</div>{% endif %}
-          </div>
-          {% if work.affiliation %}<div class="company">{{ work.affiliation }}</div>{% endif %}
+        {%- assign anchor = work.title | slugify -%}
+        <div class="item" id="{{ anchor }}">
+            <div class="meta">
+            <div class="upper-row">
+                <h3 class="job-title">
+                {% if work.link %}
+                    <a href="{{ work.link }}" target="_blank">{{ work.title }}</a>
+                {% else %}
+                    {{ work.title }}
+                {% endif %}
+                </h3>
+                {% if work.time %}<div class="time">{{ work.time }}</div>{% endif %}
+            </div>
+            {% if work.affiliation %}<div class="company">{{ work.affiliation }}</div>{% endif %}
+            </div>
+
+            {% if work.tagline %}
+            <div class="details">{{ work.tagline }}</div>  {# ← markdownify 제거 #}
+            {% endif %}
+
+            {% if work.file %}
+            {%- assign lower = work.file | downcase -%}
+            {%- if lower contains '.pdf' -%}
+                <div class="embed-wrap">
+                <object data="{{ work.file | relative_url }}" type="application/pdf" width="100%" height="640">
+                    <iframe src="{{ work.file | relative_url }}" width="100%" height="640"></iframe>
+                </object>
+                <p class="download-hint">
+                    <a href="{{ work.file | relative_url }}" download>Download PDF</a>
+                </p>
+                </div>
+            {%- elsif lower contains '.ppt' -%}
+                <div class="embed-wrap">
+                <iframe
+                    src="https://view.officeapps.live.com/op/embed.aspx?src={{ site.url | append: work.file | uri_escape }}"
+                    width="100%" height="640" frameborder="0">
+                </iframe>
+                <p class="download-hint">
+                    <a href="{{ work.file | relative_url }}" download>Download PPT</a>
+                </p>
+                </div>
+            {%- endif -%}
+            {% endif %}
         </div>
+        {% endfor %}
 
-        {% if work.tagline %}
-          <div class="details">{{ work.tagline | markdownify }}</div>
-        {% endif %}
-
-        {% if work.file %}
-          {%- assign lower = work.file | downcase -%}
-          {%- if lower contains '.pdf' -%}
-            <div class="embed-wrap">
-              <object data="{{ work.file | relative_url }}" type="application/pdf" width="100%" height="640">
-                <iframe src="{{ work.file | relative_url }}" width="100%" height="640"></iframe>
-              </object>
-              <p class="download-hint">
-                <a href="{{ work.file | relative_url }}" download>Download PDF</a>
-              </p>
-            </div>
-          {%- elsif lower contains '.ppt' -%}
-            <div class="embed-wrap">
-              <iframe
-                src="https://view.officeapps.live.com/op/embed.aspx?src={{ site.url | append: work.file | uri_escape }}"
-                width="100%" height="640" frameborder="0">
-              </iframe>
-              <p class="download-hint">
-                <a href="{{ work.file | relative_url }}" download>Download PPT</a>
-              </p>
-            </div>
-          {%- endif -%}
-        {% endif %}
-      </div>
-    {% endfor %}
   {% else %}
     <p>No seminar items found. Check <code>_data/data.yml</code> → <code>projects:</code>에 “Seminar Work” 섹션이 있는지 확인해 주세요.</p>
   {% endif %}

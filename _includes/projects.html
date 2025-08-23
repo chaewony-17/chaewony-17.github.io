@@ -27,7 +27,7 @@
 
     {% if section.intro %}
       <div class="intro">
-        {{ section.intro | markdownify }}
+        {{ section.intro }}
       </div>
     {% endif %}
 
@@ -52,20 +52,14 @@
           {% endif %}
         </div><!--//meta-->
 
-        {% if project.details or project.tagline %}
-          <div class="details">
-            {% if project.details %}
-              {{ project.details | markdownify }}
-            {% else %}
-              {{ project.tagline | markdownify }}
-            {% endif %}
-          </div><!--//details-->
+        {% if project.details %}
+          <div class="details">{{ project.details }}</div>
+        {% elsif project.tagline %}
+          <div class="details">{{ project.tagline }}</div>
         {% endif %}
 
         {%- comment -%}
-        파일 임베드는 /seminar/ 페이지에서만 처리합니다.
-        필요 시 아래 링크처럼 각 항목 앵커로 유도 가능:
-        <a href="{{ '/seminar/#' | append: (project.title | slugify) | relative_url }}">View PDF/PPT</a>
+        파일 임베드는 /seminar/에서만 처리
         {%- endcomment -%}
       </div><!--//item-->
     {% endfor %}

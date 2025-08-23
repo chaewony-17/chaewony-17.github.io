@@ -33,13 +33,13 @@
 
     {% for project in section.assignments %}
       <div class="item">
-        <div class="project-title">
-          {% if project.link %}
-            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-          {% else %}
-            {{ project.title }}
-          {% endif %}
-        </div>
+        <h3 class="job-title">
+        {% if project.link %}
+          <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+        {% else %}
+          {{ project.title }}
+        {% endif %}
+        </h3>
         {% if project.tagline %}
           <div class="details">{{ project.tagline | markdownify }}</div>
         {% endif %}

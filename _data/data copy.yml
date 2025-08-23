@@ -29,12 +29,14 @@ sidebar:
     title: Interests
     info:
     - item: Traveling
+    - item: Snowboarding
+    - item: Cooking
 
 career-profile:
   title: Hello, I'm Chaewon :)
   summary: |
-    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R. Ahn. <br>
-    My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.<br>
+    I am a Master’s student in the Department of Architectural Engineering at Seoul National University, advised by Prof. Changbum R. Ahn. 
+    My research focuses on construction robotics, robot navigation, and machine learning to enhance safety and efficiency in complex construction environments.
     I am particularly interested in Deep Reinforcement Learning (DRL), perception-aware navigation, and Vision-Language Models (VLMs) to advance intelligent robotic monitoring in construction sites.
 
 education:
@@ -85,26 +87,16 @@ experiences:
 
 publications:
   title: Publications
-  intro: >
-    Publications in construction robotics and safety monitoring since 2024.
   papers:
-    - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
-      authors: Yang C., Park J., Park M., Ahn C. R.
-      conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
-      year: 2025
-      link: "#"
-
-    - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
-      authors: Yang C., Park J., Park M., Ahn C. R.
-      conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
-      year: 2025
-      link: "#"
-
-    - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
-      authors: Ji J., Won J., Shin S., Yoo B., Yang C., Lee C., Park M., Ahn C. R.
-      conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
-      year: 2024
-      link: "#"
+  - title: "Active Robot Vision with Perception-Aware Navigation for Worker Monitoring"
+    authors: Yang C., Park J., Park M., Ahn C. R.
+    conference: Proceedings of the 2025 ASCE International Conference on Computing in Civil Engineering, May 11-14, New Orleans, Louisiana.
+  - title: "Reinforcement Learning-Based Navigation for Monitoring Personal Protective Equipment in Occluded Environments"
+    authors: Yang C., Park J., Park M., Ahn C. R.
+    conference: The 2025 Spring Annual Conference of Architectural Institute of Korea (AIK), April 23-25, Seoul, Korea.
+  - title: "Analysis of On-Site Utilization of the Hazard and Risk Prevention Plan System in the Construction Industry"
+    authors: Ji, J., Won, J., Shin, S., Yoo, B., Yang, C., Lee, C., Park, M., Ahn, C. R.
+    conference: Journal of Korea Institute of Construction Safety, Vol.7(2), pp.25-30, 2024.
 
 awards:
   title: Awards & Honors
@@ -128,40 +120,6 @@ awards:
     year: 2017
     details: "Dancing with Whales; A Vacuum-Tunnel-Based Undersea City District"
 
-projects:
-  - title: Research Projects
-    intro: >
-      Research projects on construction robotics, navigation, and worker safety monitoring.
-    assignments:
-      - title: Active Robot Vision with Perception-Aware Navigation for Worker Monitoring
-        link: "#"
-        tagline: "Perception-aware active vision & navigation... (ASCE i3CE 2025)."
-
-      - title: Utilization Analysis of Hazard & Risk Prevention Plan System
-        link: "https://cem.snu.ac.kr/research/83"
-        tagline: "Mixed-methods study on on-site use... (JKICS 2024)."
-
-  - title: Personal Projects
-    intro: >
-      Independent projects exploring wearable sensing, stress monitoring, and safety in construction.
-    assignments:
-      - title: Activity Classification for Low Back Disorder Risk using IMU
-        link: "#"
-        tagline: "Time-series IMU pipeline to classify activities..."
-
-      - title: Worker Stress Management with Wearable Biosensors
-        link: "#"
-        tagline: "EDA/HRV-based stress inference and real-time responsiveness..."
-
-      - title: Autonomous Construction Hoist & Computer Vision on Site
-        link: "#"
-        tagline: "Prototypes for precise hoist positioning and safe-zone detection..."
-
-      - title: BIM-enabled Detection of Dynamic Blind Spots for Worker Safety
-        link: "#"
-        tagline: "Using BIM to map dynamic blind spots and generate risk heatmaps (Grand Award, 2023)."
-
-
 external-activities:
   title: External Activities
   sections:
@@ -180,14 +138,13 @@ skills:
   title: Skills & Proficiency
   toolset:
   - name: Python, C/C++, C#
-    level: 92%
+    level: Advanced
   - name: Unity, ROS
-    level: 88%
+    level: Advanced
   - name: Microsoft Office (Word/Excel/PowerPoint), Photoshop, Revit
-    level: 92%
+    level: Proficient
   - name: MATLAB, ECO2-OD, EZStrobe, Primavera P6
-    level: 75%
+    level: Proficient
 
 footer: >
-  © 2025 Chaewon Yang. All rights reserved.
-
+  Designed with <i class="fas fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank" rel="nofollow">Xiaoying Riley</a>

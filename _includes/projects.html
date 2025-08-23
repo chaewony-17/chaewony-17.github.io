@@ -1,3 +1,4 @@
+{% raw %}
 {% assign projects = site.data.data.projects %}
 {% if projects %}
 <section class="section projects-section">
@@ -12,27 +13,45 @@
 
   {% if projects.intro %}
   <div class="intro">
-      <p>{{ projects.intro }}</p>
-  </div><!--//intro-->
+    <p>{{ projects.intro }}</p>
+  </div>
   {% endif %}
 
-  {% for project in projects.assignments %}
-    <div class="item">
+  {%- assign research = projects.assignments | where_exp: "p", "p.category != 'Personal'" -%}
+  {%- assign personal = projects.assignments | where: "category", "Personal" -%}
 
-      <span class="project-title">
-        {% if project.link %}
-        <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
-        {% else %}
-        {{ project.title }}
-        {% endif %}
-      </span>
+  {% if research and research.size > 0 %}
+    <h3>Research Projects</h3>
+    {% for project in research %}
+      <div class="item">
+        <span class="project-title">
+          {% if project.link %}
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+          {% else %}
+            {{ project.title }}
+          {% endif %}
+        </span>
+        {% if project.tagline %} - <span class="project-tagline">{{ project.tagline }}</span>{% endif %}
+      </div>
+    {% endfor %}
+  {% endif %}
 
-      {% if project.tagline %}
-      - <span class="project-tagline">{{ project.tagline }}</span>
-      {% endif %}
+  {% if personal and personal.size > 0 %}
+    <h3>Personal Projects</h3>
+    {% for project in personal %}
+      <div class="item">
+        <span class="project-title">
+          {% if project.link %}
+            <a href="{{ project.link }}" target="_blank">{{ project.title }}</a>
+          {% else %}
+            {{ project.title }}
+          {% endif %}
+        </span>
+        {% if project.tagline %} - <span class="project-tagline">{{ project.tagline }}</span>{% endif %}
+      </div>
+    {% endfor %}
+  {% endif %}
 
-    </div><!--//item-->
-  {% endfor %}
-
-</section><!--//section-->
+</section>
 {% endif %}
+{% endraw %}

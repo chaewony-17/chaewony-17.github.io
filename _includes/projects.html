@@ -19,10 +19,16 @@
       {% endif %}
     </h4>
 
+    {% if section.title == "Seminar Work" %}
+      <p class="more-link" style="margin-top:-6px;">
+        <a href="{{ '/seminar/' | relative_url }}">See Seminar Work (PDF/PPT) →</a>
+      </p>
+    {% endif %}
+
     {% if section.intro %}
       <div class="intro">
         {{ section.intro | markdownify }}
-      </div><!--//intro-->
+      </div>
     {% endif %}
 
     {% for project in section.assignments %}
@@ -34,26 +40,18 @@
             {{ project.title }}
           {% endif %}
         </div>
-
-        {% if project.affiliation %}
-          <div class="company">{{ project.affiliation }}</div>
-        {% endif %}
-        {% if project.time %}
-          <div class="time">{{ project.time }}</div>
+        {% if project.tagline %}
+          <div class="details">{{ project.tagline | markdownify }}</div>
         {% endif %}
 
-        <div class="details">
-          {% if project.details %}
-            {{ project.details | markdownify }}
-          {% elsif project.tagline %}
-            {{ project.tagline | markdownify }}
-          {% endif %}
-        </div><!--//details-->
-      </div><!--//item-->
-
-
+        {%- comment -%}
+        파일 임베드는 여기서 하지 않음.
+        원하면 세미나 항목별 앵커로도 유도 가능:
+        <a href="{{ '/seminar/#' | append: (project.title | slugify) | relative_url }}">View PDF/PPT</a>
+        {%- endcomment -%}
+      </div>
     {% endfor %}
   {% endfor %}
 
-</section><!--//section-->
+</section>
 {% endif %}

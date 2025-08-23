@@ -1,14 +1,169 @@
 # _data/travel.yml
+
 - name: Osaka, Japan
-  lat: 35.6762
-  lng: 139.6503
+  lat: 34.6937
+  lng: 135.5023
   images:
-    - /assets/travel/osaka/osaka1.jpg
-    - /assets/travel/osaka/osaka2.jpg
+    - /assets/travel/osaka/0.jpg
+    - /assets/travel/osaka/1.jpg
+    - /assets/travel/osaka/2.jpg
+    - /assets/travel/osaka/3.jpg
+    - /assets/travel/osaka/4.jpg
 
 - name: Seoul, South Korea
   lat: 37.5665
   lng: 126.9780
   images:
-    - /assets/travel/seoul/jeju1.jpg
-    - /assets/travel/seoul/jeju2.jpg
+    - /assets/travel/seoul/0.jpg
+    - /assets/travel/seoul/1.jpg
+
+- name: New Orleans, USA
+  lat: 29.9511
+  lng: -90.0715
+  images:
+    - /assets/travel/neworleans/0.jpg
+    - /assets/travel/neworleans/1.jpg
+    - /assets/travel/neworleans/2.jpg
+
+- name: Los Angeles, USA
+  lat: 34.0522
+  lng: -118.2437
+  images:
+    - /assets/travel/la/0.jpg
+    - /assets/travel/la/1.jpg
+    - /assets/travel/la/2.jpg
+    - /assets/travel/la/3.jpg
+
+- name: Shanghai, China
+  lat: 31.2304
+  lng: 121.4737
+  images:
+    - /assets/travel/shanghai/0.jpg
+    - /assets/travel/shanghai/1.jpg
+    - /assets/travel/shanghai/2.jpg
+    - /assets/travel/shanghai/3.jpg
+    - /assets/travel/shanghai/4.jpg
+
+- name: Bangkok, Thailand
+  lat: 13.7563
+  lng: 100.5018
+  images:
+    - /assets/travel/bangkok/0.jpg
+    - /assets/travel/bangkok/1.jpg
+    - /assets/travel/bangkok/2.jpg
+    - /assets/travel/bangkok/3.jpg
+    - /assets/travel/bangkok/4.jpg
+
+- name: Da Nang, Vietnam
+  lat: 16.0544
+  lng: 108.2022
+  images:
+    - /assets/travel/danang/0.jpg
+    - /assets/travel/danang/1.jpg
+    - /assets/travel/danang/2.jpg
+    - /assets/travel/danang/3.jpg
+    - /assets/travel/danang/4.jpg
+    - /assets/travel/danang/5.jpg
+    - /assets/travel/danang/6.jpg
+    - /assets/travel/danang/7.jpg
+    - /assets/travel/danang/8.jpg
+
+- name: Positano, Italy
+  lat: 40.6281
+  lng: 14.4840
+  images:
+    - /assets/travel/positano/0.jpg
+    - /assets/travel/positano/1.jpg
+    - /assets/travel/positano/2.jpg
+
+- name: Rome, Italy
+  lat: 41.9028
+  lng: 12.4964
+  images:
+    - /assets/travel/rome/0.jpg
+    - /assets/travel/rome/1.jpg
+    - /assets/travel/rome/2.jpg
+    - /assets/travel/rome/3.jpg
+
+- name: Florence, Italy
+  lat: 43.7699
+  lng: 11.2556
+  images:
+    - /assets/travel/florence/0.jpg
+    - /assets/travel/florence/1.jpg
+    - /assets/travel/florence/2.jpg
+    - /assets/travel/florence/3.jpg
+    - /assets/travel/florence/4.jpg
+    - /assets/travel/florence/5.jpg
+
+- name: Bolzano, Italy
+  lat: 46.4983
+  lng: 11.3548
+  images:
+    - /assets/travel/bolzano/0.jpg
+    - /assets/travel/bolzano/1.jpg
+    - /assets/travel/bolzano/2.jpg
+    - /assets/travel/bolzano/3.jpg
+    - /assets/travel/bolzano/4.jpg
+    - /assets/travel/bolzano/5.jpg
+    - /assets/travel/bolzano/6.jpg
+    - /assets/travel/bolzano/7.jpg
+
+- name: Munich, Germany
+  lat: 48.1351
+  lng: 11.5820
+  images:
+    - /assets/travel/munich/0.jpg
+    - /assets/travel/munich/1.jpg
+    - /assets/travel/munich/2.jpg
+    - /assets/travel/munich/3.jpg
+    - /assets/travel/munich/4.jpg
+    - /assets/travel/munich/5.jpg
+    - /assets/travel/munich/6.jpg
+
+- name: Budapest, Hungary
+  lat: 47.4979
+  lng: 19.0402
+  images:
+    - /assets/travel/budapest/0.jpg
+    - /assets/travel/budapest/1.jpg
+    - /assets/travel/budapest/2.jpg
+    - /assets/travel/budapest/3.jpg
+    - /assets/travel/budapest/4.jpg
+    - /assets/travel/budapest/5.jpg
+    - /assets/travel/budapest/6.jpg
+    - /assets/travel/budapest/7.jpg
+    - /assets/travel/budapest/8.jpg
+    - /assets/travel/budapest/9.jpg
+    - /assets/travel/budapest/10.jpg
+    - /assets/travel/budapest/11.jpg
+
+- name: Vienna, Austria
+  lat: 48.2100
+  lng: 16.3738
+  images:
+    - /assets/travel/vienna/0.jpg
+    - /assets/travel/vienna/1.jpg
+    - /assets/travel/vienna/2.jpg
+    - /assets/travel/vienna/3.jpg
+    - /assets/travel/vienna/4.jpg
+    - /assets/travel/vienna/5.jpg
+    - /assets/travel/vienna/6.jpg
+
+- name: Füssen, Germany
+  lat: 47.5714
+  lng: 10.7010
+  images:
+    - /assets/travel/fussen/0.jpg
+    - /assets/travel/fussen/1.jpg
+    - /assets/travel/fussen/2.jpg
+    - /assets/travel/fussen/3.jpg
+
+- name: Prague, Czech Republic
+  lat: 50.0755
+  lng: 14.4378
+  images:
+    - /assets/travel/prague/0.jpg
+    - /assets/travel/prague/1.jpg
+    - /assets/travel/prague/2.jpg
+    - /assets/travel/prague/3.jpg

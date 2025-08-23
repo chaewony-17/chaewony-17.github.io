@@ -162,8 +162,8 @@ projects:
       - title: Active Vision - Deep RL for Robotic Path Planning
         link: "https://cem.snu.ac.kr/Workshop"
         file: 
-        - "/assets/slides/seminar_1270.pdf"
-        - "/assets/slides/seminar_1271.pdf"
+            - "/assets/slides/seminar_1270.pdf"
+            - "/assets/slides/seminar_1271.pdf"
         tagline: "SNU Construction Research Workshop (1270th,1271th)."
       - title: VQA-based Navigation for Robotic Monitoring
         file: "/assets/slides/seminar_1272.pdf"

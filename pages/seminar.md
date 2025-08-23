@@ -47,7 +47,7 @@ permalink: /seminar/
             </div>
 
             {% if work.tagline %}
-            <div class="details">{{ work.tagline }}</div>  {# ← markdownify 제거 #}
+            <div class="details">{{ work.tagline }}</div>
             {% endif %}
 
             {% if work.file %}

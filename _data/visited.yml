@@ -2,26 +2,34 @@
 # code: ISO-2 (대문자), color: 0xRRGGBB (숫자/16진)
 
 - code: KR
-  color: 0x0E7C86   # Korea (메인 포인트색)
+  color: 0x0E7C86   # South Korea
 - code: JP
-  color: 0x4CA3A7
+  color: 0x4CA3A7   # Japan
 - code: US
-  color: 0x2E8BC0
+  color: 0x2E8BC0   # United States
 - code: CN
-  color: 0x6C9A8B
+  color: 0x6C9A8B   # China
 - code: TH
-  color: 0x7BC8A4
+  color: 0x7BC8A4   # Thailand
 - code: VN
-  color: 0x5DB7A2
+  color: 0x5DB7A2   # Vietnam
 - code: IT
-  color: 0x4E8098
+  color: 0x4E8098   # Italy
 - code: DE
-  color: 0x3A6F7D
+  color: 0x3A6F7D   # Germany
 - code: HU
-  color: 0x66A5AD
+  color: 0x66A5AD   # Hungary
 - code: AT
-  color: 0x2F7C9A
+  color: 0x2F7C9A   # Austria
 - code: CZ
-  color: 0x4AA7C0
-- code: GB   # UK는 GB
-  color: 0x3997B5
+  color: 0x4AA7C0   # Czech Republic
+- code: GB
+  color: 0x3997B5   # United Kingdom
+- code: ES
+  color: 0x5CA0B5   # Spain
+- code: TW
+  color: 0x3C9D9B   # Taiwan
+- code: VA
+  color: 0x7BAE9E   # Vatican City
+- code: FR
+  color: 0x5296A5   # France

@@ -461,3 +461,21 @@ body {
   margin-bottom: 1rem; /* 원하는 만큼 조절 (예: 16px) */
 }
 
+.flag-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .75rem;      /* 위/아래 여백은 취향껏 */
+  margin-bottom: 1rem;
+}
+.flag-strip .flags {
+  font-size: 2rem;         /* 국기 크기: 1.6~2.4rem 사이로 조절 추천 */
+  line-height: 1;
+}
+.flag-strip .next {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0E7C86;          /* 사이트 포인트 컬러 */
+  margin-left: .5rem;
+}

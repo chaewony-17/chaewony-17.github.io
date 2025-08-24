@@ -470,9 +470,15 @@ body {
   margin-bottom: 1rem;
 }
 .flag-strip .flags {
-  font-size: 2rem;         /* 국기 크기: 1.6~2.4rem 사이로 조절 추천 */
+  font-size: 2rem;
   line-height: 1;
+
+  // ⬇️ 이 줄 추가 (이모지 폰트 스택)
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+               "Twemoji Mozilla", "EmojiOne Color", "Android Emoji",
+               system-ui, sans-serif !important;
 }
+
 .flag-strip .next {
   font-size: 1rem;
   font-weight: 600;

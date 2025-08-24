@@ -21,9 +21,7 @@
   lat: 29.9511
   lng: -90.0715
   images:
-    - /assets/travel/neworleans/0.jpg
-    - /assets/travel/neworleans/1.jpg
-    - /assets/travel/neworleans/2.jpg
+    - /assets/travel/neworleans/0.png
 
 - name: Los Angeles, USA
   lat: 34.0522

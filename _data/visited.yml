@@ -1,0 +1,27 @@
+# _data/visited.yml
+# code: ISO-2 (대문자), color: 0xRRGGBB (숫자/16진)
+
+- code: KR
+  color: 0x0E7C86   # Korea (메인 포인트색)
+- code: JP
+  color: 0x4CA3A7
+- code: US
+  color: 0x2E8BC0
+- code: CN
+  color: 0x6C9A8B
+- code: TH
+  color: 0x7BC8A4
+- code: VN
+  color: 0x5DB7A2
+- code: IT
+  color: 0x4E8098
+- code: DE
+  color: 0x3A6F7D
+- code: HU
+  color: 0x66A5AD
+- code: AT
+  color: 0x2F7C9A
+- code: CZ
+  color: 0x4AA7C0
+- code: GB   # UK는 GB
+  color: 0x3997B5
